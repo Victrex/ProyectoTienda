@@ -50,10 +50,10 @@ body {
 	
 }
   
-.contenedor .form. form-input, .forn-textarea {
+.contenedor .form, .form-input, .forn-textarea {
 	background: rgba(o,o,o,.7);
 	border: none;
-	autline: none;
+	outline: none;
 	border-bottom: 2px solid #FF851B;
 	width: 100%;
 	padding: 12px;
