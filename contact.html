@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
 </head>
 <body>
@@ -17,32 +18,44 @@
 		<a href="contact.html">Contactanos</a>
 			<a href="#">Preguntas Frecuentes</a>
 			<a href="index.html">Inicio</a>
-	</header>
+</header>
 <!--FIN DE NAV-->
 
-<br><br>
-   <div class="contenedor">
-	   <form action="" class="form">
-			<div class="form-header"></div>
-	   <h1 class="form-title">C<span>ontacto</span></h1>
-	</div>
-	
-	<label for="nombre" class="form-label">Nombres:</label>
-	<input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
-	
-	<label for="direccion" class="form-label"> Direccion:</label>
-	<input type="text" class="form-input" id="direccion" placeholder="Escriba su direccion">
-	
-	<label for="correo" class="form-label"> Correo Electronico</label>
-	<input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
-	
-	<label for="mensaje" class="form-label"> Mensaje</label>
-	<textarea id="mensaje" class="form-textarea" placeholder="Escriba su mensaje"></textarea>
-	
-	<input type="submit" class="btn-submit" value="Enviar Consulta">
-	</form>
-  </div>
+<!-- formulario de contacto en html y css -->  
 
-
+<div class="contact_form">
+	<div class="formulario">			
+  		<h1>Formulario de contacto</h1>
+		<h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+		<form>				
+			<p>
+			<label for="nombre" class="colocar_nombre">Nombre
+				<span class="obligatorio">*</span>
+			</label>
+			<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+			</p>
+			<p>
+				<label for="email" class="colocar_email">Email
+					<span class="obligatorio">*</span>
+				</label>
+				<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+			</p>		
+			<p>
+				<label for="asunto" class="colocar_asunto">Asunto
+					<span class="obligatorio">*</span>
+				</label>
+				<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+			</p>		
+			<p>
+				<label for="mensaje" class="colocar_mensaje">Mensaje
+					<span class="obligatorio">*</span>
+				</label>                     
+				<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+			</p>	  								
+			<button name="enviar_formulario" class="button_primary" id="enviar"><p>Enviar</p></button>					
+		</form>
+	</div>	
+</div>
+<script src="js/nav.js"></script>
 </body>
 </html>
