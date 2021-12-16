@@ -41,6 +41,11 @@ body {
     width: 90%;
     margin: auto;
   }
+.carousel{
+  color: #1b5998;
+  background-color: #1b5998 !important;
+}
+
   
   @media screen and (max-width: 800px) {
 	.header{
