@@ -442,16 +442,16 @@ footer{
 	margin: 0;
 	padding: 10px;
 	bottom: 0;
-	width: 100%;
-	height: 200px;
-
+	height: 170px;
+	justify-content: center;
 	background-color: #144a80;
 }
 .foot div{
-	width: 25%;
+	width: 20%;
 	color: white;
 }
 .foot{
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -472,8 +472,10 @@ footer{
 	color: white;
 }
 .copy{
+	justify-content: center;
+	text-align: center;
+	width: 100%;
 	color: white;
-	float: right;
 }
 @media screen and (max-width:600px) {
 	.footer{
