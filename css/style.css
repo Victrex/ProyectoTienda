@@ -273,3 +273,158 @@ body {
 }
 
 /*----------------END DEPORTES-----------------*/
+
+/*preguntasfrecuentes-----*/
+:root {
+    --primario: #b3c43e; 
+    --gris-claro: #7fa7b8;
+    --sombra: 0 0 13px 0 rgba(185,185,185, .25); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: #f8fafb;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+   margin: 40px auto;
+}
+
+.titulo{ 
+    color: #1b5998;
+    font-weight: 700;
+    text-align: center;
+    margin: 70px 0;
+}
+
+/*categoria/
+*/
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.categoria{
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 700;
+    color: var(--primario);
+    border: 2px solid transparent;
+    transition: .3s ease all;
+}
+
+.categoria:hover{
+    box-shadow: var(--sombra);
+    color: #000;
+
+}
+
+.categoria:hover path {
+    fill: var(--gris-claro);
+
+}
+
+.categoria svg {
+    width: 60px;
+    margin-bottom: 10px;
+
+
+}
+
+.categoria path{
+    fill: var(--primario);
+    transition: .3s ease all;
+
+}
+.categoria.activa {
+    border: 2px solid var(--gris-claro);
+    color: #000;
+}
+
+.categoria.activa path {
+    fill:var(--gris-claro);
+
+}
+
+/*contenedor de preguntas*/
+
+.contenedor-Preguntas{
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+}
+
+.contenedor-Preguntas.activo{
+    display: grid;
+}
+
+
+.contenedor-Pregunta{
+    background: #fff;
+    padding:40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s ease all;
+    cursor: pointer;
+}    
+
+.contenedor-Pregunta:hover{
+    box-shadow: var(--sombra);
+
+
+}
+.contenedor-Pregunta.activa{
+    border: 2px solid var(--primario)
+    
+}
+
+/*preguntas*/
+
+.Pregunta {
+    font-weight: normal 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Pregunta img {
+width: 14px;
+}
+
+.Respuesta{
+    color: #808080;
+    line-height: 30px;
+    max-height: 0;
+    opacity: 0;
+    transition: .3s ease all;
+}
+
+.contenedor-Pregunta.activa .Respuesta {
+    opacity: 1;
+    margin-top: 20px;
+
+}
+
+.contenedor-Pregunta.activa img {
+    transform: rotate(45deg);
+}
+
+/*endpreguntasFrecuentes----*/
