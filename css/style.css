@@ -275,12 +275,13 @@ body {
 /*----------------END DEPORTES-----------------*/
 
 /*preguntasfrecuentes-----*/
+
 :root {
     --primario: #b3c43e; 
     --gris-claro: #7fa7b8;
     --sombra: 0 0 13px 0 rgba(185,185,185, .25); 
 }
-
+/*
 * {
     box-sizing: border-box;
     margin: 0; 
@@ -290,7 +291,7 @@ body {
 body {
     background: #f8fafb;
     font-family: 'Roboto', sans-serif;
-}
+}*/
 
 main {
     max-width: 1000px;
@@ -359,7 +360,14 @@ main {
     fill:var(--gris-claro);
 
 }
-
+@media screen and (max-width: 600px) {
+	.categorias{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 60px;
+	
+}
 /*contenedor de preguntas*/
 
 .contenedor-Preguntas{
