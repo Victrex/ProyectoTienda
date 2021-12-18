@@ -457,6 +457,9 @@ footer{
 	width: 20%;
 	color: white;
 }
+footer div div h3{
+	color: white;
+}
 .foot{
 	width: 100%;
 	display: flex;
@@ -499,7 +502,7 @@ footer{
 	}
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:350px) {
 	.foot div{
 		width: 100%;
 	}
