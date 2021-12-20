@@ -64,9 +64,6 @@ h3 span{
     color: #FE9870;
     margin-left: 15px;
 }
-.art_art{
-
-}
 .art_section{
     justify-content: space-between;
     left: 0;
@@ -142,8 +139,16 @@ h3 span{
       width: 200px;
   }
   .art_desc h2 a{
-      font-size: 0.5em;
+      font-size: 0.2em;
   }
+  .art_desc h4 a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #1b5998;
+  }
+  .art_desc h5{
+    font-size: 0.8em;
+}
 }
 @media screen and (max-width:300px) {
     .art_articulo img{
