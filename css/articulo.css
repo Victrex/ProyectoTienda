@@ -64,8 +64,8 @@ h3 span{
     color: #FE9870;
     margin-left: 15px;
 }
-
 .art_section{
+    justify-content: space-between;
     left: 0;
     align-items: center;
     width: 100%;
@@ -100,8 +100,8 @@ h3 span{
 }
 .art_articulo{
     margin: 10px;
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 325px;
     border: 2px solid #E5E5E5;
     padding: 5px;
 }
@@ -125,6 +125,7 @@ h3 span{
 }
 .art_desc h5{
     font-size: 1em;
+    
 }
 @media screen and (max-width:600px) {
         .art_articulo img{
@@ -139,8 +140,17 @@ h3 span{
       width: 200px;
   }
   .art_desc h2 a{
-      font-size: 0.5em;
+      font-size: 0.2em;
   }
+  .art_desc h4 a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #1b5998;
+  }
+  .art_desc h5{
+
+    font-size: 0.8em;
+}
 }
 @media screen and (max-width:300px) {
     .art_articulo img{
