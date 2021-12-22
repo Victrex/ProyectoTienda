@@ -3,6 +3,11 @@ body{
     padding: 0;
     margin: 0;
 }
+.back a{
+    text-decoration: none;
+    color: #144a80;
+    margin: 10px;
+}
 .artCamisa{
     margin: 0 auto;
     justify-content: center;
